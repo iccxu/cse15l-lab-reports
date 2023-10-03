@@ -4,5 +4,7 @@ In this lab report, I use the lecture1 folder provided as my example. The circle
 1. Calling the command 'cd' with no arguments returns nothing.
 2. Calling the command 'cd' with 'lecture1' as its argument changes the directory of the file and accesses the lecture1 folder.
 3. Calling the command 'cd' with the file 'en-au.txt' produces an error because the command isn't meant to access files.
+<img width="424" alt="lab1_cd_examples" src="https://github.com/iccxu/cse15l-lab-reports/assets/130236216/d92c476d-e45d-481a-872a-e3caedc70327">
+
 ## ls command
 1. Calling the command 'ls' with no arguments returns 'lecture1' which is the name of 

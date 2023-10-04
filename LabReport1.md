@@ -1,8 +1,10 @@
 # Remote Access and FileSystem (Week 1)
 In this lab report, I use the lecture1 folder provided as my example. The circled numbers in each image corresponds to the numbered finding in each cd, ls, and cat category.
 ## cd command
-1. Calling the command 'cd' with no arguments returns nothing. This isn't an error as the directory is blank, hence returning nothing.
+1. Calling the command 'cd' with no arguments returns nothing. The current working directory when this command was run is nothing. Because  no arguments were included as a directory, the command returns nothing, which is the expected output.
 2. Calling the command 'cd' with 'lecture1' as its argument changes the directory of the file and accesses the lecture1 folder.
+> [user@sahara ~/lecture1]$
+This is expected as cd is supposed to go into the directory its argument assigns (if it's the subsequential directory after the previous). Therefore, it is not an error.
 3. Calling the command 'cd' with the file 'en-au.txt' as its argument produces an error because the command isn't meant to access files.
 ![Image](lab1_cd_examples.png)
 

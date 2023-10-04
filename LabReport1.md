@@ -16,4 +16,4 @@ In this lab report, I use the lecture1 folder provided as my example. The circle
 1. Calling the command 'cat' with no arguments outputs back what the user typed until the user exits out of it. This is expected behavior since the 'cat' command with no arguments will repeat back what is inputed. This could be because the 'cat' command is meant to output the contents of folders and files, and if there's no arguments for the terminal to access, it accesses its own inputs.
 2. Calling the command 'cat' with arguments will output the contents of the files or folder that the argument is.
 3. 
-![Image](lab1_cat_examples.png)
+![Image](lab1_cat_example.png)

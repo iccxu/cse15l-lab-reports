@@ -14,5 +14,6 @@ In this lab report, I use the lecture1 folder provided as my example. The circle
 
 ## cat command
 1. Calling the command 'cat' with no arguments outputs back what the user typed until the user exits out of it. This is expected behavior since the 'cat' command with no arguments will repeat back what is inputed. This could be because the 'cat' command is meant to output the contents of folders and files, and if there's no arguments for the terminal to access, it accesses its own inputs.
-2. Calling the command 'cat' with arguments will output the contents of the files or folder that the argument is.
+2. Calling the command 'cat' with directory as an argument will output whether the argument is a directory or not. The working directory at the time of running the command is lecture1. I used 'messages' as an argument, resulting in the terminal outputting that the 'messages' folder is a directory. This isn't an error as it's giving information of what the messages folder is.
+3. Calling the command 'cat' with a file as its argument outputs the content of the file. I used en-au.txt as an example, and as a result, the content, 'Oi mate!' in the file is outputted. This isn't an error as one of the functions of the 'cat' command is to output what the contents of the file are.
   ![Image](lab1_cat_example.png)

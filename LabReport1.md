@@ -12,10 +12,10 @@ In this lab report, I use the lecture1 folder provided as my example. The circle
 2. Prior to calling the command, the current working directory was /home. Calling the command 'ls' with 'lecture1' as its argument returns the contents in the lecture1 folder, both files and folders, despite not being in the lecture1 working directory. The output behaves as it should by including every file and folder in the lecture1 folder, hence it is not an error. However, the arguments used after ls must already be in the folder of the working directory like the /home directory holding the lecture1 folder. It's unable to reach within a folder of a folder unless it gets cd'd into.
 3. Prior to calling the command, the current working directory was /home/lecture1/messages. Calling the command 'ls' with the file 'en-au.txt' as its argument returns the name of the file which is expected since the 'ls' command is meant to return the names of files and folders in the current directory. Additionally, if the working directory was /home/lecture1 and the ls command was called with messages/en-us.txt as its argument, the terminal returns the path used in the argument: messages/en-us.txt which is interesting.
 
-![Image](lab1_ls_updated_example_1.png.)
-The follow images rorrespond to 3.
-![Image](lab1_ls_updated_example_2.png.)
-![Image](lab1_ls_updated_example_3.png.)
+![Image](lab1_ls_updated_example_1.png)
+The following images correspond to 3.
+![Image](lab1_ls_updated_example_2.png)
+![Image](lab1_ls_updated_example_3.png)
 
 ## cat command
 1. Prior to calling the command, the current working directory is /home/lecture1. Calling the command 'cat' with no arguments outputs back what the user typed until the user exits out of it. This is expected behavior since the 'cat' command with no arguments will repeat back what is inputed. This could be because the 'cat' command is meant to output the contents of folders and files, and if there's no arguments for the terminal to access, it accesses its own inputs.

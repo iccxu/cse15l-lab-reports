@@ -16,8 +16,8 @@ Like previously said, I use the handleRequest method whose arguments takes in th
 The private key for my SSH key is stored in /Users/ivyxu/.ssh/id_rsa
 
 **Public Key:**  
-![Image](public_key_on_ieng6.png)  
-The public key for my SSH in the ieng6 server is stored in /home/linux/ieng6/cs15lfa23/cs15lfa23fk/.ssh/authorized_keys
+![Image](ieng6_keys.png)  
+The public key for my SSH in the ieng6 server is stored in /home/linux/ieng6/cs15lfa23/cs15lfa23fk/.ssh/id_rsa.pub
 
 **Log Into ieng6 Without Password:**  
 <img src="login_without_pw.png" width="582" height="436">  

@@ -17,7 +17,7 @@ Like previously said, I use the handleRequest method whose arguments takes in th
 
 ## Part 2
 **Private Key:
-**![Image](keys)
+**![Image](keys.png)
 
 **Public Key:
 **![Image](public_key_on_ieng6.png)

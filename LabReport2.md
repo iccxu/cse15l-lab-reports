@@ -1,6 +1,7 @@
 # Lab Report 2 - Servers and SSH Keys (Week 3)
 ## Part 1
 ![Image](lab2_StringServer_code.png)
+<img src=lab2_StringServer_code.png width="100" height="100">
 ![Image](lab2_StringServer_class.png)
 
 I called one method in my code which is called 'handleRequest.' I also have a class called StringServer which creates the server for the website and intakes a port number. This port value can change based on what the user decides to input and affects which port is used inside the localhost url. The handleRequest method takes in a url link and looks for the '/add-message' path and 's=____' query. The relevant values of this method are the strings that can added to the website list based on it being written inside the query. With these components, the website should show [Number of order it was added]. [user inputted string]. The number of the order it was added is incremented by 1 each time a new string is added to the list.

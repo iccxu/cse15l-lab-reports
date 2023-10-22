@@ -13,13 +13,15 @@ Like previously said, I use the handleRequest method whose arguments takes in th
 ## Part 2
 **Private Key:** <br>
 ![Image](keys.png)  
-The public key for my SSH key is stored in /Users/ivyxu/
+The private key for my SSH key is stored in /Users/ivyxu/.ssh/id_rsa
 
 **Public Key:**  
-![Image](public_key_on_ieng6.png)
+![Image](public_key_on_ieng6.png)  
+The public key for my SSH in the ieng6 server is stored in /home/linux/ieng6/cs15lfa23/cs15lfa23fk/.ssh/authorized_keys
 
 **Log Into ieng6 Without Password:**  
-<img src="login_without_pw.png" width="582" height="436">
+<img src="login_without_pw.png" width="582" height="436">  
+Above is logging in without inputting a password.
 
 ## Part 3
 I learned a lot of terminal commands in week 2 and 3 that have been very useful for finding paths. I think the most useful commands I learned have been 'cd' and 'pwd'.  They're definitely helpful when trying to figure out what working directory you're in or need to enter. For example, I began to use them outside of CSE 15L for my CSE12 class whenever I get "unable to find file/directory" errors in my terminal. 

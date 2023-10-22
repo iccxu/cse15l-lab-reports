@@ -16,13 +16,13 @@ Like previously said, I use the handleRequest method whose arguments takes in th
 Like previously said, I use the handleRequest method whose arguments takes in the URI url of my localhost. The relevant values of this method is the path and query. This image shows '2. how are you' after changing the query to 's=how are you'. It gets added onto the existing list created from the previous 'hello' query and increments the count by 1 for each string added. In this case, the query input is 'how are you.' The values of the url that change based on a specific request is the query after 's='. The /add-message path shouldn't change since any strings that get added to the website will use the same path.
 
 ## Part 2
-**Private Key:**
+**Private Key:** <br>
 ![Image](keys.png)
 
-**Public Key:**
+**Public Key:**  
 ![Image](public_key_on_ieng6.png)
 
-**Log Into ieng6 Without Password:**
+**Log Into ieng6 Without Password:**  
 ![Image](login_without_pw.png)
 
 ## Part 3

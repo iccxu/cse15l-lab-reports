@@ -20,7 +20,7 @@ Like previously said, I use the handleRequest method whose arguments takes in th
 ![Image](public_key_on_ieng6.png)
 
 **Log Into ieng6 Without Password:**  
-![Image](login_without_pw.png)
+<img src="login_without_pw.png" width="582" height="436">
 
 ## Part 3
 I learned a lot of terminal commands in week 2 and 3 that have been very useful for finding paths. I think the most useful commands I learned have been 'cd' and 'pwd'.  They're definitely helpful when trying to figure out what working directory you're in or need to enter. For example, I began to use them outside of CSE 15L for my CSE12 class whenever I get "unable to find file/directory" errors in my terminal. 

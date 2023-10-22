@@ -1,7 +1,7 @@
 # Lab Report 2 - Servers and SSH Keys (Week 3)
 ## Part 1
 ![Image](lab2_StringServer_code.png)
-<img src=lab2_StringServer_code.png width="731" height="483">
+<img src="lab2_StringServer_code.png" width="731" height="483">
 
 ![Image](lab2_StringServer_class.png)
 

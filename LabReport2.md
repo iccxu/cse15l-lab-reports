@@ -8,7 +8,7 @@ I called one method in my code which is called 'handleRequest.' I also have a cl
 Like previously said, I use the handleRequest method whose arguments takes in the URI url of my localhost. The relevant values of this method is the path and query. For example, the image shows '1. hello' where the inputted url was localhost:1300/add-message?s=hello. 1300 is the port number I used to open my server. '/add-message' is the path and 's=hello' is the query. The values of the url that change based on a specific request is the query after 's='. The /add-message path shouldn't change since any strings that get added to the website will use the same path. In this case, 'hello' is added to the list based on being inputted in the query.  
 
 <img src="lab2howareyou.png" width="499" height="132">  
-Like previously said, I use the handleRequest method whose arguments takes in the URI url of my localhost. The relevant values of this method is the path and query. This image shows '2. how are you' after changing the query to 's=how are you'. It gets added onto the existing list created from the previous 'hello' query and increments the count by 1 for each string added. In this case, the query input is 'how are you.' The values of the url that change based on a specific request is the query after 's='. The /add-message path shouldn't change since any strings that get added to the website will use the same path.
+Like previously said, I use the handleRequest method whose arguments takes in the URI url of my localhost. The relevant values of this method is the path and query. This image shows '2. how are you' after changing the query to 's=how are you'. It gets added onto the existing list created from the previous 'hello' query and increments the count by 1 for each string added. In this case, the query input is 'how are you.' The values of the url that change based on a specific request is the query after 's='. The `/add-message` path shouldn't change since any strings that get added to the website will use the same path.
 
 ## Part 2
 **Private Key:** <br>
@@ -17,7 +17,7 @@ The private key for my SSH key is stored in /Users/ivyxu/.ssh/id_rsa
 
 **Public Key:**  
 ![Image](ieng6_keys.png)  
-The public key for my SSH key in the ieng6 server is stored in /home/linux/ieng6/cs15lfa23/cs15lfa23fk/.ssh/id_rsa.pub
+The public key for my SSH key in the ieng6 server is stored in `/home/linux/ieng6/cs15lfa23/cs15lfa23fk/.ssh/id_rsa.pub`
 
 **Log Into ieng6 Without Password:**  
 <img src="login_without_pw.png" width="582" height="436">  

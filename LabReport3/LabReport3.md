@@ -36,5 +36,5 @@ This test resulted in an incorrectly ordered list error where the last element w
 	}
 ```
 However, the input of a list with the same element value passes the test such as `{1, 1, 1}`. This is because the list element values remain the same regardless of if it was actually reversed or not. Below is the JUnit results of both the failing and passing test:  
-![Image](LabReport3/lab3_JUnit_test.png)
+![Image](lab3_JUnit_test.png)
 

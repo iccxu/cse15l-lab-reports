@@ -59,4 +59,12 @@ For example, we saw the -name option for find in class. For each of those option
 That makes 8 total examples, all focused on a single command. There should be two examples each for four different command-line options. Many commands like these have pretty sophisticated behavior possible – it can take years to be exposed to and learn all of the possible tricks and inner workings.
 
 Along with each option/mode you show, cite your source for how you found out about it as a URL or a description of where you found it. See the syllabus on Academic Integrity and how to cite sources like ChatGPT for this class.
-I explored the `grep` command and found that there's a multitude of different ways to use it. The basic syntax for `grep` is usually `grep [option] 
+I explored the `grep` command and found that there's a multitude of different ways to use it. The basic syntax for `grep` is usually `grep [option] pattern [files]` (GeeksForGeeks - grep command in Unix/Linux).  
+*grep -c*  
+One function of `grep` is that it can count the amount of lines in a file that contains certain words by using `-c` in the terminal. For example, I called `grep -c "DNA" technical/biomed/*.txt` to search for the amount of lines per file that contained the word "DNA". This outputted each file in the biomed directory and how many lines contained "DNA" per file.
+!Image[grep example 1 image]  
+
+Another example of calling the `grep -c` command is I searched for the amount of lines contained the word "science" in a specific file. I called `grep -c "science" technical/plos/journal.pbio.0020001.txt`. This outputted `16` as the word "science" appeared in 16 lines of the `journal.pbio.0020001.txt` file.  
+!Image[grep example 2]  
+
+

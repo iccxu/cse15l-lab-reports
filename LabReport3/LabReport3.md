@@ -25,4 +25,14 @@ public void testReverseInPlace3Items() {
     assertArrayEquals(new int[]{3, 2, 1}, input1);
 }
 ```
-This resulted in an incorrectly ordered list error where the last element was '3' when it should've been '1'.
+This test resulted in an incorrectly ordered list error where the last element was '3' when it should've been '1'.  
+
+```
+  @Test 
+	public void testReverseInPlaceSameNums() {
+    int[] input1 = {1, 1, 1};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{1, 1, 1}, input1);
+	}
+```
+However, the input of a list with the same element value passes the test such as `{1, 1, 1}`. This is because the list element values remain the same regardless of if it was actually reversed or not. Below is the JUnit results of both the failing and passing test:  

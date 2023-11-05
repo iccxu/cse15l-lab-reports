@@ -66,4 +66,20 @@ One function of `grep` is that it can count the amount of lines in a file that c
 Another example of calling the `grep -c` command is I searched for the amount of lines contained the word "science" in a specific file. I called `grep -c "science" technical/plos/journal.pbio.0020001.txt`. This outputted `16` as the word "science" appeared in 16 lines of the `journal.pbio.0020001.txt` file.  
 !Image[grep example 2]  
 
-
+#### grep -l  
+`grep` can also show you files that contain certain keywords with its `-l` command. For example, I called `grep -l "mice" technical/biomed/*.txt` to search for text files that contained the word "mice" in them. This outputted a list of text files within the biomed directory.
+```
+Terminal Input:
+grep -l "mice" technical/biomed/*.txt  
+  
+Output:  
+technical/biomed/1471-2091-2-16.txt
+technical/biomed/1471-2091-2-5.txt
+technical/biomed/1471-2091-3-14.txt
+technical/biomed/1471-2091-3-30.txt
+technical/biomed/1471-2091-3-31.txt
+technical/biomed/1471-2091-3-8.txt
+technical/biomed/1471-2105-3-17.txt
+technical/biomed/1471-2105-3-4.txt
+...
+```

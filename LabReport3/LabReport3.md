@@ -186,3 +186,5 @@ technical/biomed/1471-2091-3-14.txt:4
 ...
 ```  
 Overall, I think `grep -wc` works very similarly to the `grep -c` command since they both find the amount of times a keyword appears in a file. Because of this, I think `grep -wc` would have the same usefulness as `grep -c` where a user can check how many times a word or sentence appeared in a file. This can be used as a way to filter files. If a file doesn't have the keyword a user is looking for, then they can ignore that file since it appears 0 times.  
+
+![Image](test.jpg)

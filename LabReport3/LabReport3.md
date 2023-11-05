@@ -60,14 +60,40 @@ That makes 8 total examples, all focused on a single command. There should be tw
 Along with each option/mode you show, cite your source for how you found out about it as a URL or a description of where you found it. See the syllabus on Academic Integrity and how to cite sources like ChatGPT for this class.
 I explored the `grep` command and found that there's a multitude of different ways to use it. The basic syntax for `grep` is usually `grep [option] pattern [files]` (GeeksForGeeks - grep command in Unix/Linux).  
 #### grep -c
-One function of `grep` is that it can count the amount of lines in a file that contains certain words by using `-c` in the terminal. For example, I called `grep -c "DNA" technical/biomed/*.txt` to search for the amount of lines per file that contained the word "DNA". This outputted each file in the biomed directory and how many lines contained "DNA" per file.
-!Image[grep example 1 image]  
+One function of `grep` is that it can count the amount of lines in a file that contains certain words by using `-c` in the terminal. For example, I called `grep -c "DNA" technical/biomed/*.txt` to search for the amount of lines per file that contained the word "DNA". This outputted each file in the biomed directory and how many lines contained "DNA" per file.  
+  
+```
+Terminal Input:  
+grep -c "DNA" technical/biomed/*.txt  
 
+Output:
+...
+technical/biomed/1471-2091-2-10.txt:3
+technical/biomed/1471-2091-2-11.txt:10
+technical/biomed/1471-2091-2-12.txt:1
+technical/biomed/1471-2091-2-13.txt:5
+technical/biomed/1471-2091-2-16.txt:0
+technical/biomed/1471-2091-2-5.txt:12
+technical/biomed/1471-2091-2-7.txt:1
+technical/biomed/1471-2091-2-9.txt:0
+technical/biomed/1471-2091-3-13.txt:97
+technical/biomed/1471-2091-3-14.txt:20
+...
+```
+(I use "..." to show there were more files part of the output but not shown in the example).  
+  
 Another example of calling the `grep -c` command is I searched for the amount of lines contained the word "science" in a specific file. I called `grep -c "science" technical/plos/journal.pbio.0020001.txt`. This outputted `16` as the word "science" appeared in 16 lines of the `journal.pbio.0020001.txt` file.  
-!Image[grep example 2]  
-
+  
+```
+Terminal Input:
+grep -c "science" technical/plos/journal.pbio.0020001.txt
+  
+Output:  
+16
+```  
+  
 #### grep -l  
-`grep` can also show you files that contain certain keywords with its `-l` command. For example, I called `grep -l "mice" technical/biomed/*.txt` to search for text files that contained the word "mice" in them. This outputted a list of text files within the biomed directory.
+`grep` can also show you files that contain certain keywords with its `-l` command. For example, I called `grep -l "mice" technical/biomed/*.txt` to search for text files that contained the word "mice" in them. This outputted a list of text files within the biomed directory.  
 ```
 Terminal Input:
 grep -l "mice" technical/biomed/*.txt  

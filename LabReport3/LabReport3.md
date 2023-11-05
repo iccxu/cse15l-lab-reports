@@ -58,7 +58,7 @@ For example, we saw the -name option for find in class. For each of those option
 That makes 8 total examples, all focused on a single command. There should be two examples each for four different command-line options. Many commands like these have pretty sophisticated behavior possible – it can take years to be exposed to and learn all of the possible tricks and inner workings.
 
 Along with each option/mode you show, cite your source for how you found out about it as a URL or a description of where you found it. See the syllabus on Academic Integrity and how to cite sources like ChatGPT for this class.
-I explored the `grep` command and found that there's a multitude of different ways to use it. The basic syntax for `grep` is usually `grep [option] pattern [files]` (GeeksForGeeks - grep command in Unix/Linux).  
+I explored the `grep` command and found that there's a multitude of different ways to use it. The basic syntax for `grep` is usually `grep [option] pattern [files]`. I used GeeksForGeeks - grep command in Unix/Linux (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) as guidance for each of my examples below.  
 #### grep -c
 One function of `grep` is that it can count the amount of lines in a file that contains certain words by using `-c` in the terminal. For example, I called `grep -c "DNA" technical/biomed/*.txt` to search for the amount of lines per file that contained the word "DNA". This outputted each file in the biomed directory and how many lines contained "DNA" per file.  
   
@@ -68,8 +68,6 @@ grep -c "DNA" technical/biomed/*.txt
 
 Output:
 ...
-technical/biomed/1471-2091-2-10.txt:3
-technical/biomed/1471-2091-2-11.txt:10
 technical/biomed/1471-2091-2-12.txt:1
 technical/biomed/1471-2091-2-13.txt:5
 technical/biomed/1471-2091-2-16.txt:0
@@ -91,7 +89,7 @@ grep -c "science" technical/plos/journal.pbio.0020001.txt
 Output:  
 16
 ```
-Overall, `grep -c` can be useful 
+Overall, `grep -c` can be useful if a user wants to know how many times a word or sentence appeared in a file. It can also be used as a way to filter files. If a file doesn't have the keyword a user is looking for, then they can ignore that file since it appears 0 times.  
   
 #### grep -l  
 `grep` can also show you files that contain certain keywords with its `-l` command. For example, I called `grep -l "mice" technical/biomed/*.txt` to search for text files that contained the word "mice" in them. This outputted a list of text files within the biomed directory.
@@ -122,4 +120,17 @@ technical/plos/journal.pbio.0020311.txt
 technical/plos/journal.pbio.0020347.txt
 technical/plos/journal.pbio.0020439.txt
 ```
-Overall, `grep -l` can be useful for finding files with certain keywords since it acts as a filter based on what string the user inputs to find within their files. 
+Overall, `grep -l` can be useful for finding files with certain keywords since it acts as a filter based on what string the user inputs to find within their files.  
+
+#### grep -w  
+Another function of `grep` is `-w` which will show you the contents of files with the keyword given. For example, I called `grep -w "Charles Darwin" technical/plos/*` to find where "Charles Darwin" appeared in the text files of the plos directory.  
+```
+Terminal Input:
+grep -w "Charles Darwin" technical/plos/*
+Output:  
+technical/plos/journal.pbio.0020046.txt:        answers to possible questions and criticisms to avoid stutteri
+ng. Charles Darwin also                                                                                       technical/plos/journal.pbio.0020311.txt:        out by Charles Darwin and his son Francis in 1880. The Darwins
+ were able to demonstrate                                                                                     technical/plos/journal.pbio.0020347.txt:        described by Charles Darwin (1859).
+technical/plos/journal.pbio.0020439.txt:        location within the head (Hsieh 2003). Charles Darwin was right
+when he wrote that people
+```                                         

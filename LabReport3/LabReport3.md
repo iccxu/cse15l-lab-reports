@@ -90,10 +90,11 @@ grep -c "science" technical/plos/journal.pbio.0020001.txt
   
 Output:  
 16
-```  
+```
+Overall, `grep -c` can be useful 
   
 #### grep -l  
-`grep` can also show you files that contain certain keywords with its `-l` command. For example, I called `grep -l "mice" technical/biomed/*.txt` to search for text files that contained the word "mice" in them. This outputted a list of text files within the biomed directory.  
+`grep` can also show you files that contain certain keywords with its `-l` command. For example, I called `grep -l "mice" technical/biomed/*.txt` to search for text files that contained the word "mice" in them. This outputted a list of text files within the biomed directory.
 ```
 Terminal Input:
 grep -l "mice" technical/biomed/*.txt  
@@ -109,3 +110,16 @@ technical/biomed/1471-2105-3-17.txt
 technical/biomed/1471-2105-3-4.txt
 ...
 ```
+I also wanted to test out the `-l` command with multiple words to see if strings of words also can get filtered and found in files, which it does. For example, I wanted to find files that were about or related to Charles Darwin in the plos directory. This outputted four journal text files that had his name in them.
+
+```
+Terminal Input:
+grep -l "Charles Darwin" technical/plos/*
+
+Output:  
+technical/plos/journal.pbio.0020046.txt
+technical/plos/journal.pbio.0020311.txt
+technical/plos/journal.pbio.0020347.txt
+technical/plos/journal.pbio.0020439.txt
+```
+Overall, `grep -l` can be useful for finding files with certain keywords since it acts as a filter based on what string the user inputs to find within their files. 

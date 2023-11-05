@@ -50,14 +50,7 @@ static void reverseInPlace(int[] arr) {
 ```  
 The updated code fixes the issue because it uses a temporary array to store the original elements, then updates the elements of the array from the end of the temp array. This way, no elements get lost when reversing the original array.   
 
-## Part 2 - Researching Commands
-Consider the commands less, find, and grep. Choose one of them. Online, find 4 interesting command-line options or alternate ways to use the command you chose. To find information about the commands, a simple Web search like “find command-line options” will probably give decent results. There is also a built-in command on many systems called man (short for “manual”) that displays information about commands; you can use man grep, for example, to see a long listing of information about how grep works. Also consider asking ChatGPT!
-
-For example, we saw the -name option for find in class. For each of those options, give 2 examples of using it on files and directories from ./technical. Show each example as a code block that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
-
-That makes 8 total examples, all focused on a single command. There should be two examples each for four different command-line options. Many commands like these have pretty sophisticated behavior possible – it can take years to be exposed to and learn all of the possible tricks and inner workings.
-
-Along with each option/mode you show, cite your source for how you found out about it as a URL or a description of where you found it. See the syllabus on Academic Integrity and how to cite sources like ChatGPT for this class.
+## Part 2 - Researching Commands  
 I explored the `grep` command and found that there's a multitude of different ways to use it. The basic syntax for `grep` is usually `grep [option] pattern [files]`. I used GeeksForGeeks - grep command in Unix/Linux (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) as guidance for each of my examples below.  
 #### grep -c
 One function of `grep` is that it can count the amount of lines in a file that contains certain words by using `-c` in the terminal. For example, I called `grep -c "DNA" technical/biomed/*.txt` to search for the amount of lines per file that contained the word "DNA". This outputted each file in the biomed directory and how many lines contained "DNA" per file.  
@@ -131,6 +124,65 @@ Output:
 technical/plos/journal.pbio.0020046.txt:        answers to possible questions and criticisms to avoid stutteri
 ng. Charles Darwin also                                                                                       technical/plos/journal.pbio.0020311.txt:        out by Charles Darwin and his son Francis in 1880. The Darwins
  were able to demonstrate                                                                                     technical/plos/journal.pbio.0020347.txt:        described by Charles Darwin (1859).
-technical/plos/journal.pbio.0020439.txt:        location within the head (Hsieh 2003). Charles Darwin was right
-when he wrote that people
+technical/plos/journal.pbio.0020439.txt:        location within the head (Hsieh 2003). Charles Darwin was righ
+t when he wrote that people
 ```                                         
+
+I also wanted to test it out with just a specific file:
+```
+Terminal Input:
+grep -w "mice" technical/biomed/rr74.txt
+
+Output:
+        using mice that are deficient in NOS isoforms.
+        vascular tone. Studies using knockout mice for each of
+        hypertension in mice that lack eNOS [ 9, 12]. In the
+        present study we exposed wild-type mice to severe hypobaric
+          ME, USA) mice at age 6 weeks.
+          Briefly, mice were anesthetized with ketamine/xyalazine
+        lung expression of eNOS and possibly iNOS in mice with
+        The pulmonary hypertension in mice exposed to hypoxia
+        Despite the increase in eNOS, however, the mice developed
+        detection in the lungs of hypoxic, hypertensive mice.
+        protein, using several different antibodies, in mice. This
+        iNOS protein levels in adult mice following hypoxia was
+        hypoxia. We have recently reported that mice deficient in
+        in mice following hypoxia. Increased nNOS has been
+        coronary circulation of eNOS-deficient mice, but its role
+        Although we attempted to keep the mice continuously
+        lung following hypoxia in mice is presently unknown.
+        considering studies using NOS-deficient mice. The present
+        study also suggests that exposure of neonatal mice to
+        that observed in mature mice exposed to hypoxia, and this
+```
+Interestingly, the command with a specific file showed a much larger chunk of text where "mice" was used in comparison to looking at multiple files with a keyword, like in the previous example, where only a small amount of text was shown per file.  
+Overall, `grep -w` lets you know where a given keyword is used in the text files. This can be helpful if you're trying to search for certain keywords in a file and where specifically they appear in the file.  
+
+#### grep -wc  
+For my last examples, I combined `grep` and the word count command from lecture and used it as `grep -wc` to see what it would output. Below, I inputted `grep -wc "mice" technical/biomed/rr74.txt`. I used the same file from the previous "mice" example and `-wc` outputted 20. I discovered that `grep -wc` would return the amount of times that specific keyword appeared in the file since "mice" appears 20 times in the rr74.txt file.
+```
+Terminal Input:
+grep -wc "mice" technical/biomed/rr74.txt
+
+Output:
+20
+```
+Then I wanted to test it out for the entire biomed directory rather than just a specific file. I inputted `grep -wc "mice" technical/biomed/*`.  
+  
+```
+Terminal Input:
+grep -wc "mice" technical/biomed/*
+
+Output:
+...
+technical/biomed/1471-2091-2-12.txt:0
+technical/biomed/1471-2091-2-13.txt:0
+technical/biomed/1471-2091-2-16.txt:4
+technical/biomed/1471-2091-2-5.txt:1
+technical/biomed/1471-2091-2-7.txt:0
+technical/biomed/1471-2091-2-9.txt:0
+technical/biomed/1471-2091-3-13.txt:0
+technical/biomed/1471-2091-3-14.txt:4
+...
+```  
+Overall, I think `grep -wc` works very similarly to the `grep -c` command since they both find the amount of times a keyword appears in a file. Because of this, I think `grep -wc` would have the same usefulness as `grep -c` where a user can check how many times a word or sentence appeared in a file. This can be used as a way to filter files. If a file doesn't have the keyword a user is looking for, then they can ignore that file since it appears 0 times.  

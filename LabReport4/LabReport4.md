@@ -7,7 +7,7 @@ To begin, I wanted to log into the ieng6. In the terminal, I typed in `s` `s` `h
 ![Image](lab4_login.png)  
 
 ### Step 5: Clone your fork of the repository from your Github account (using the SSH URL)  
-Next, I cloned a fork of my repository and copied the ssh link by clicking the clipboard. Then in my terminal, I typed in `g` `i` `t` `<Space>` `c` `l` `o` `n` `e` `<Space>` `Cmd+V` which pasted `git@github.com:iccxu/lab7.git`. Then I pressed `<Enter>` into the terminal to finalizae the command and it began cloning into my ieng6 account.  
+Next, I cloned a fork of my repository and copied the ssh link by clicking the clipboard. Then in my terminal, I typed in `g` `i` `t` `<Space>` `c` `l` `o` `n` `e` `<Space>` `Cmd+V` which pasted `git@github.com:iccxu/lab7.git`. Then I pressed `<Enter>` into the terminal to finalize the command and it began cloning into my ieng6 account.  
   
 ![Image](lab4_clone.png)  
 

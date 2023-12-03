@@ -2,7 +2,7 @@
 It took me about 10 minutes according to the timer.  
   
 ### Step 4: Log into ieng6  
-To begin, I wanted to log into the ieng6. In the terminal, I typed in `s` `s` `h` `c` `s` `1` `5` `l` `f` `a` `2` `3` `f` `k` `@` `i` `e` `n` `g` `6` .ucsd.edu to log into ieng6.  
+To begin, I wanted to log into the ieng6. In the terminal, I typed in `s` `s` `h` `c` `s` `1` `5` `l` `f` `a` `2` `3` `f` `k` `@` `i` `e` `n` `g` `6` `.``u`csd.edu to log into ieng6.  
   
 ![Image](lab4_login.png)  
 

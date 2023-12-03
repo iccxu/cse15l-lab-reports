@@ -15,7 +15,7 @@ You should actually set up and run the scenario from your screenshots. It should
 #### Edstem.org  
 ***	 
 **AnonymousWhale**:  
-Hello! I'm having issues with my `ArrayExamples.java` code. I'm trying to reverse a list but it's not properly reversing a normal list. Here is my code and test:  
+Hello! I'm having issues with my `ArrayExamples.java` code. I'm trying to reverse a list but it's not properly reversing a normal list. Here is my code and test prior to fixing the bug:  
 ![Image](failed_code.png)  
 ![Image](bash_test_fail.png)  
 I tested it out by running `bash test.sh` where the contents of the `test.sh` file was:  
@@ -34,7 +34,8 @@ Oh I see! So I should use a temporary array to store the original elements and t
 **FantasticTA:** Correct! Could you show me your implementation of that?  
   
 **AnonymousWhale:**   
-I did this:   
-![Image](fixed_code.png)   
 I created a temporary array to store the contents of the original array. Then I iterated through the temporary array and set each index of the original array to the elements in the temporary array but in backwards order so the original array gets reversed. Then I tested it out again and ran `bash test.sh`. My code works! Thank you.  
+Here is my code after fixing the bug:   
+![Image](fixed_code.png)   
+The bash test:  
 ![Image](bash_passed_tests.png)  

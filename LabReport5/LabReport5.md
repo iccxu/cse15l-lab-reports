@@ -15,9 +15,14 @@ You should actually set up and run the scenario from your screenshots. It should
 #### Edstem.org  
 ***	 
 AnonymousWhale:  
-Hello! I'm having issues with my `ArrayExamples.java` code. I'm trying to reverse a list but it's not properly reversing a normal list. Here is my code and test:
-[both images]  
-
+Hello! I'm having issues with my `ArrayExamples.java` code. I'm trying to reverse a list but it's not properly reversing a normal list. Here is my code and test:  
+![Image](fail_code.png)  
+![Image](bash_test_fail.png)  
+I tested it out by running `bash test.sh` where the contents of the `test.sh` file was:  
+```
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
+```  
 The test results in `1` being the first element of the list when it should be `3`. How would I fix this?  
   
 FantasticTA:  

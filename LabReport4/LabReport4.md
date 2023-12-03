@@ -2,12 +2,12 @@
 It took me about 10 minutes according to the timer.  
   
 ### Step 4: Log into ieng6  
-To begin, I wanted to log into the ieng6. In the terminal, I typed in `s` `s` `h` `<Space>` `c` `s` `1` `5` `l` `f` `a` `2` `3` `f` `k` `@` `i` `e` `n` `g` `6` `.` `u` `c` `s` `d` `.` `e` `d` `u` and pressed `<Enter>` to log into ieng6.
+To begin, I wanted to log into the ieng6. In the terminal, I typed in `s` `s` `h` `<Space>` `c` `s` `1` `5` `l` `f` `a` `2` `3` `f` `k` `@` `i` `e` `n` `g` `6` `.` `u` `c` `s` `d` `.` `e` `d` `u` and pressed `<Enter>` to log into ieng6. After a little bit, it automatically loggged me in without requiring a password.
   
 ![Image](lab4_login.png)  
 
 ### Step 5: Clone your fork of the repository from your Github account (using the SSH URL)  
-Next, I typed in `git clone git@github.com:iccxu/lab7.git` into the terminal to clone it into my ieng6 account.  
+Next, I cloned a fork of my repository and copied the ssh link. Then in my terminal, I typed in `git` `<Space>` `clone` `<Space>` `Cmd+V` which pasted `git@github.com:iccxu/lab7.git`. Then I pressed `<Enter>` into the terminal to clone it into my ieng6 account.  
   
 ![Image](lab4_clone.png)  
 

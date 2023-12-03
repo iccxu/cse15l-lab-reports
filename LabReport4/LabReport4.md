@@ -23,11 +23,11 @@ I started off by fixing the `ListExamples.java` file. To fix the code, I entered
 ![Image](lab4_codefix.png)  
 
 ### Step 8: Run the tests, demonstrating that they now succeed  
-I ran `bash test.sh` once again and all the tests passed.  
+After I finished fixing the bugs, I ran `bash test.sh` once again by typing `bash` `<Space>` `test.sh` `<Enter>` and all the tests passed.  
   
 ![Image](lab4_fixed_test.png)  
 
 ### Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)  
-Afterwards, I typed in `git add ListExamples.java` to add the file to my workspace. Then `git status` to see what was in the current workspace. I typed in `git commit` to commit the changes and added a message. Once I finished, I typed in `:wq` to save and quit the changes of my commit message then `git push` to push the file into the GitHub server.  
+Afterwards, I typed in `git` `<Space>` `add` `<Space>` `ListExamples.java` `<Enter>` to add the file to my workspace. Then `git` `<Space>` `status` `<Enter>` to see what was in the current workspace. I typed in `git` `<Space>` `commit` `<Enter>` to commit the changes and added a message. Once I finished, I typed in `:` `w` `q` `<Enter>` to save and quit the changes of my commit message then `git` `<Space>` `push` `<Enter>` to push the file into the GitHub server.  
 ![Image](lab4push.png)  
 

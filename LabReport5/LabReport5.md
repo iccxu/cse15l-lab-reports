@@ -16,7 +16,7 @@ You should actually set up and run the scenario from your screenshots. It should
 ***	 
 **AnonymousWhale**:  
 Hello! I'm having issues with my `ArrayExamples.java` code. I'm trying to reverse a list but it's not properly reversing a normal list. Here is my code and test:  
-![Image](fail_code.png)  
+![Image](failed_code.png)  
 ![Image](bash_test_fail.png)  
 I tested it out by running `bash test.sh` where the contents of the `test.sh` file was:  
 ```

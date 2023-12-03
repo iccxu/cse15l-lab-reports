@@ -14,7 +14,7 @@ You should actually set up and run the scenario from your screenshots. It should
 ## Part 1 - Debugging Scenario
 #### Edstem.org  
 ***	 
-AnonymousWhale:  
+**AnonymousWhale**:  
 Hello! I'm having issues with my `ArrayExamples.java` code. I'm trying to reverse a list but it's not properly reversing a normal list. Here is my code and test:  
 ![Image](fail_code.png)  
 ![Image](bash_test_fail.png)  
@@ -25,13 +25,16 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 ```  
 The test results in `1` being the first element of the list when it should be `3`. How would I fix this?  
   
-FantasticTA:  
+**FantasticTA:**  
 Hi, it seems like you're trying to modify the original array. Since you're reversing each element within the same Arraylist, the old elements where index 0 is, is not being stored anywhere. Could you do anything that would keep track of the original elements prior to reversing them?  
   
-AnonymousWhale:  
+**AnonymousWhale:**  
 Oh I see! So I could use a temporary array to store the original elements and then use that to reverse the original array?  
   
-FantasticTA: Correct! Could you show me your implementation of that?  
+**FantasticTA:** Correct! Could you show me your implementation of that?  
   
-AnonymousWhale:  
+**AnonymousWhale:**  
 I did this: 
+![Image](fixed_code.png)  
+Then I tested it out again and ran `bash test.sh`. My code works! Thank you.  
+![Image](bash_passed_tests.png)  

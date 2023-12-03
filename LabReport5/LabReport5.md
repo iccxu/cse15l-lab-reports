@@ -26,7 +26,7 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 The test results in `1` being the first element of the list when it should be `3`. How would I fix this?  
   
 **FantasticTA:**  
-Hi, it seems like you're trying to modify the original array. Since you're reversing each element within the same Arraylist, the old elements where index 0 is, is not being stored anywhere. Could you do anything that would keep track of the original elements prior to reversing them?  
+Hi, it seems like you're trying to modify the original array. Since you're reversing each element within the same Arraylist, the old elements where the last index is, is not being stored anywhere prior to getting changed. So as you modify each element in the front with the elements in the back, you eventually lose all the original elemnts. Could you do anything that would keep track of the original elements prior to reversing them?  
   
 **AnonymousWhale:**  
 Oh I see! So I could use a temporary array to store the original elements and then use that to reverse the original array?  

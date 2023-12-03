@@ -33,8 +33,8 @@ Oh I see! So I should use a temporary array to store the original elements and t
   
 **FantasticTA:** Correct! Could you show me your implementation of that?  
   
-**AnonymousWhale:**  
-I did this: 
-![Image](fixed_code.png)  
-Then I tested it out again and ran `bash test.sh`. My code works! Thank you.  
+**AnonymousWhale:**   
+I did this:   
+![Image](fixed_code.png)   
+I created a temporary array to store the contents of the original array. Then I iterated through the temporary array and set each index of the original array to the elements in the temporary array but in backwards order so the original array gets reversed. Then I tested it out again and ran `bash test.sh`. My code works! Thank you.  
 ![Image](bash_passed_tests.png)  

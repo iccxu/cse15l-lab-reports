@@ -2,7 +2,7 @@
 It took me about 10 minutes according to the timer.  
   
 ### Step 4: Log into ieng6  
-In the terminal, I typed in `ssh cs15lfa23fk@ieng6.ucsd.edu` to log into ieng6.  
+To begin, I wanted to log into the ieng6. In the terminal, I typed in `s''s''h' cs15lfa23fk@ieng6.ucsd.edu` to log into ieng6.  
   
 ![Image](lab4_login.png)  
 
